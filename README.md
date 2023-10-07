@@ -14,6 +14,8 @@ The goal is to create an interactive canvas with controls to manipulate images a
 
 List of key libraries and services used in the project.
 
+###### note: list may change over the course of the project while trying different strategies. I'll update as roadmap items are closed and considered stable.
+
 | library / service                            | scope       | description                      |
 | :------------------------------------------- | :---------- | :------------------------------- |
 | [SvelteKit](https://github.com/sveltejs/kit) | `framework` | app framework with svelte + vite |
