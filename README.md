@@ -1,5 +1,7 @@
 <picture>
-  <img alt="Live Canvas: Real-Time Canvas Collaboration" src="./static/gh-live-canvas.png">
+  <source media="(prefers-color-scheme: dark)"  srcset="/static/gh-live-canvas.png">
+  <source media="(prefers-color-scheme: light)" srcset="/static/gh-live-canvas.png">
+  <img alt="Live Canvas: Real-Time Canvas Collaboration" src="/static/gh-live-canvas.png">
 </picture>
 
 # Live Canvas
