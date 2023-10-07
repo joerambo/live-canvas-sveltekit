@@ -1,38 +1,60 @@
-# create-svelte
+<picture>
+  <img alt="Live Canvas: Real-Time Canvas Collaboration" src="./static/gh-live-canvas.png">
+</picture>
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+# Live Canvas
 
-## Creating a project
+Experiment with real-time canvas collaboration using sveltekit.
 
-If you're seeing this, you've probably already done this step. Congrats!
+The goal is to create an interactive canvas with controls to manipulate images and text. Users create projects and share sessions with external users for real-time collaboration. Projects always reflect the latest canvas state from the most recent session without the need for timed autosaves or user interaction.
+
+## Stack
+
+List of key libraries and services used in the project.
+
+| library / service                            | scope       | description                      |
+| :------------------------------------------- | :---------- | :------------------------------- |
+| [SvelteKit](https://github.com/sveltejs/kit) | `framework` | app framework with svelte + vite |
+
+## Roadmap
+
+- [ ] layout - app structure and core pages
+- [ ] auth - user sign up / sign in
+- [ ] projects - create new project with general settings
+- [ ] projects - launch and edit existing project
+- [ ] projects - share collaborative session via url
+
+## Develop
+
+#### Setup
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
+# create environment variables
+cp .env.example .env
 
-# create a new project in my-app
-npm create svelte@latest my-app
+# install packages
+pnpm install
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+#### Local Dev Server
 
 ```bash
-npm run dev
+pnpm dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# shortcuts:
+  # r - to restart server
+  # u - to show server url
+  # o - to open in browser
+  # c - to clear console
+  # q - to quit
 ```
 
-## Building
-
-To create a production version of your app:
+## Build / Preview
 
 ```bash
-npm run build
+# output production build
+pnpm build
+
+# preview production build
+pnpm preview
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
