@@ -14,10 +14,14 @@ The goal is to create an interactive canvas with controls to manipulate images a
 
 List of key libraries and services used in the project.
 
-| library / service                                       | scope       | description                      |
-| :------------------------------------------------------ | :---------- | :------------------------------- |
-| [SvelteKit](https://github.com/sveltejs/kit)            | `framework` | app framework with svelte + vite |
-| [Tailwind](https://github.com/tailwindlabs/tailwindcss) | `styles`    | css utility library              |
+| library / service                                       | scope                 | description                                   |
+| :------------------------------------------------------ | :-------------------- | :-------------------------------------------- |
+| [SvelteKit](https://github.com/sveltejs/kit)            | `framework`           | app framework with svelte + vite              |
+| [Supabase](https://github.com/supabase/supabase)        | `auth` `db` `storage` | user management, postgres, and file store     |
+| [Fabric](https://github.com/fabricjs/fabric.js)         | `canvas`              | html5 canvas library for object/layer methods |
+| [Liveblocks](https://github.com/liveblocks/liveblocks)  | `websocket` `storage` | real-time data store for canvas state         |
+| [Tailwind](https://github.com/tailwindlabs/tailwindcss) | `styles`              | css utility framework                         |
+| [Vercel](https://github.com/vercel/vercel)              | `infrastructure`      | serverless deployments                        |
 
 > note: list may change over the course of the project while trying different strategies. I'll update as roadmap items are closed and considered stable.
 
