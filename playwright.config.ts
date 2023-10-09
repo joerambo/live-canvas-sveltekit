@@ -5,6 +5,11 @@ const config: PlaywrightTestConfig = {
 		command: 'pnpm prod',
 		port: 8080
 	},
+	use: {
+		screenshot: 'on'
+	},
+	reporter: [['list'], ['html', { outputFolder: 'tests-report' }]],
+	outputDir: 'tests-artifacts',
 	testDir: 'tests',
 	testMatch: /(.+\.)?(test|spec)\.[jt]s/
 };
